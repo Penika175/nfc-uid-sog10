@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="20dp"
+    android:paddingTop="14dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="14dp">
+
+    <TextView
+        android:id="@+id/card_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+    <TextView
+        android:id="@+id/card_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+    <ImageView
+        android:id="@+id/card_check"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bg_check_circle"
+        android:contentDescription="当前"
+        android:padding="4dp"
+        android:src="@drawable/ic_check"
+        android:visibility="gone" />
+</LinearLayout>
